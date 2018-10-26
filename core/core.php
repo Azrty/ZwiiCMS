@@ -602,7 +602,7 @@ class common {
 	}
 
 	/**
-	 * Récupérer une copie d'écran du site Web pour le tag image si le fichier n'existe pas.
+	 * Récupérer une copie d'écran du site Web pour le tag image si le fichier n'existe pas
 	 * En local, copie du site décran de ZwiiCMS
 	 */	
 	public function makeImageTag () {
