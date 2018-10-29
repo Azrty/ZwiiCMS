@@ -6,9 +6,11 @@
 	- Footer dans 3 blocs contenant dans l'ordre : Texte, Réseaux sociaux, Copyright
 	- Pagination variable du nombres d'articles par page (news, blog et form)
 	- Position des modules Galerie et Form dans une page ; haut ; bas ou libre avec les doubles crochets insérés dans l'article [] (PeterRabbit)
-    - Prise en compte des balises OpenGraph title , description et type
+    - Prise en compte des balises OpenGraph obligatoires title , description, type et images
+    - Modification de la position des boutons retour et éditer lors de l'affichage d'un article si connecté
 * Correction : 
     - Accès aux pages désactivées par le sitemap
+    - Réduction du temps d'affichage des notifications
 
 ## version 8.3.13 :
 * Modifications : 
