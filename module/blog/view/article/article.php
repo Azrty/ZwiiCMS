@@ -1,10 +1,18 @@
+<!--
 <div id="blogArticlePicture" style="background-image:url('<?php echo helper::baseUrl(false) . 'site/file/source/' . $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'picture']); ?>');"></div>
-<h4 class="textAlignRight">
-	<?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'firstname']); ?>
-	<?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'lastname']); ?>
-	le <?php echo date('d/m/Y H:i', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'publishedOn'])); ?>
-</h4>
+-->
+<div><img src="<?php echo helper::baseUrl(false) . 'site/file/source/' . $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'picture']); ?>"></div>
+
 <?php echo $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'content']); ?>
+
+<!-- <h4 class="textAlignRight"> -->
+<p class="signature">
+	Le <?php echo date('d M Y à H:i', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'publishedOn'])); ?>
+    par 	<?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'firstname']); ?>
+	<?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'lastname']); ?>
+<!-- </h4> -->
+</p>
+
 <div class="clearBoth"></div>
 <h2 id="comment">
 	<?php $commentsNb = count($this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'comment'])); ?>

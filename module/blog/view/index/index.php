@@ -25,7 +25,7 @@
 						<a href="<?php echo helper::baseUrl() . $this->getUrl(0) . '/' . $articleId; ?>">Lire la suite</a>
 					</p>
 					<p class="signature">
-						Rédigé par <?php echo $this->getData(['user', $article['userId'], 'firstname']) . ' ' . $this->getData(['user', $article['userId'], 'lastname']); ?>
+						<?php echo $this->getData(['user', $article['userId'], 'firstname']) . ' ' . $this->getData(['user', $article['userId'], 'lastname']); ?>
 					</p>
 				</div>
 			<?php endforeach; ?>

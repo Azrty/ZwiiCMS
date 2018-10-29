@@ -8,9 +8,12 @@
 	- Position des modules Galerie et Form dans une page ; haut ; bas ou libre avec les doubles crochets insérés dans l'article [] (PeterRabbit)
     - Prise en compte des balises OpenGraph obligatoires title , description, type et images
     - Modification de la position des boutons retour et éditer lors de l'affichage d'un article si connecté
+    - Mise en forme de la composition des articles et des news 
+    - Suppression du message de l'édition des redirections
 * Correction : 
     - Accès aux pages désactivées par le sitemap
     - Réduction du temps d'affichage des notifications
+    - Image responsive en en-tête de l'article d'un blog
 
 ## version 8.3.13 :
 * Modifications : 
