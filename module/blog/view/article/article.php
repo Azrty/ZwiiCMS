@@ -93,8 +93,6 @@
 </div>
 <?php  if($this->getUser('group') >= self::GROUP_ADMIN): ?>
 <div class="row">
-	<div class="col4">
-	</div>
     <div class="col2">
 		<?php echo template::button('blogBack', [
 					'class' => 'buttonGrey',
@@ -103,15 +101,13 @@
 					'value' => 'Retour'
 		]); ?>
     </div>
-    <div class="col2">
+    <div class="col2 offset8">
  		<?php echo template::button('blogEdit', [
-					'class' => 'buttonGrey',
+					'class' => 'buttonBlue',
 					'href' => helper::baseUrl() . $this->getUrl(0) . '/edit/' . $this->getUrl(1),
 					'value' => 'Editer'
 		]); ?>
     </div>
-    <div class="col4">
-	</div>
 </div>
 <?php else: ?>
 <div class="row">
