@@ -4,7 +4,8 @@
 			<?php foreach($module::$articles as $articleId => $article): ?>
 				<div class="block">
 					<h4>
-						Le <?php echo date('d M Y à H:i', $article['publishedOn']); ?>
+						<!-- Le <?php echo date('d M Y à H:i', $article['publishedOn']); ?> -->
+						Le <?php echo strftime('%d %B %Y à %H:%M', $article['publishedOn']); ?>
 						<div class="blogComment">
 							<a href="<?php echo helper::baseUrl() . $this->getUrl(0) . '/' . $articleId; ?>#comment">
 								<?php echo count($article['comment']); ?>

@@ -7,9 +7,9 @@
 
 <!-- <h4 class="textAlignRight"> -->
 <p class="signature">
-	Le <?php echo date('d M Y à H:i', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'publishedOn'])); ?>
-    par 	<?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'firstname']); ?>
+    <?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'firstname']); ?>
 	<?php echo $this->getData(['user', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'userId']), 'lastname']); ?>
+	le <?php echo strftime('%d %B %Y à %H:%M', $this->getData(['module', $this->getUrl(0), $this->getUrl(1), 'publishedOn'])); ?>
 <!-- </h4> -->
 </p>
 
@@ -92,7 +92,7 @@
 					<?php else: ?>
 						<?php echo $comment['author']; ?>
 					<?php endif; ?>
-					le <?php echo date('d/m/Y - H:i', $comment['createdOn']); ?>
+					le <?php echo strftime('%d %B %Y à %H:%M', $comment['createdOn']); ?>
 				</h4>
 				<?php echo $comment['content']; ?>
 			</div>
