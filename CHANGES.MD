@@ -10,6 +10,7 @@
     - Modification de la position des boutons retour et éditer lors de l'affichage d'un article si connecté
     - Mise en forme de la composition des articles et des news 
     - Suppression du message de l'édition des redirections
+    - Présentation des champs auteur date et heure des articles et des commentaires.
 * Correction : 
     - Accès aux pages désactivées par le sitemap
     - Réduction du temps d'affichage des notifications
