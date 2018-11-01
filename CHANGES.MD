@@ -11,7 +11,7 @@
     - Mise en forme de la composition des articles et des news 
     - Suppression du message de l'édition des redirections
     - Modifications de la présentation des en-têtes d'articles de Blog et de News
-    - Format du mois au format log et en français
+    - Format du mois au format long et en français
 * Correction : 
     - Accès aux pages désactivées par le sitemap
     - Réduction du temps d'affichage des notifications
